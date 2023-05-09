@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color:hsl(234, 12%, 34%);
+    /* font-size: 1rem; */
+}
+
+/* Fonts */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 , h2{
+    margin: 0;
+    font-size: 30px
+}
+
+h3{
+    margin: 0;
+    font-size: 1rem;
+}
+
+h1{
+    font-weight: 300;
+}
+
+p{
+    color:hsl(229, 6%, 66%);
+    font-size: 14px;
+}
+.text_section{
+    /* text-align: center;
+    padding: 90px 0px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 0px;
+}
+
+.text_paragraph{
+    text-align: center;
+    max-width: 60%;
+}
+
+.cards_section{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    grid-template-rows: 1fr 1fr;
+    gap: 5%;
+    padding: 0 15px;
+    justify-items: center;
+    margin-bottom: 10px;
+} 
+
+article{
+    display: grid;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px hsl(229, 6%, 66%, 0.4);
+    overflow: hidden;
+    position: relative;
+    max-width: 317px;
+    min-width: 30%;
+    transition: 0.5s;
+}
+
+article:hover{
+    transform: scale(1.1);
+}
+
+.supervisor{
+    grid-row: 1 / span 2;
+    align-self: center;
+}
+
+.calculator{
+    grid-column: 3/4;
+    grid-row: 1/3;
+    align-self: center;
+}
+
+img{
+    justify-self: end;
+}
+
+
+/* colors */
+/* - Red: 
+- Cyan: 
+- Orange: 
+- Blue:  */
+
+
+.red{
+    background-color:hsl(0, 78%, 62%);
+}
+
+.cyan{
+    background-color:hsl(180, 62%, 55%);
+}
+
+.orange{
+  background-color: hsl(34, 97%, 64%);
+}
+
+.blue{
+    background-color:hsl(212, 86%, 64%) ;
+}
+.line{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 6px;
+}
+
+.container{
+    padding: 0 10%;
+}
+
+
+
+
+
+
+@media (max-width:1000px){
+    
+    .container{
+        padding: 0 2%;
+    }
+    
+}
+
+@media (max-width:660px){
+    
+    .cards_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap; 
+
+    }
+
+    article{
+        margin-bottom: 20px;
+    }
+
+    h1,h2{
+        font-size: 25px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    .container{
+        padding: 5%;
+    }
+   
+}
